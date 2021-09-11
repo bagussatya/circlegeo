@@ -30,7 +30,7 @@ def download(tanggal):
             open(dest_folder + '/' + filename,'wb').write(response.content)
 
 def buat_nc(tanggal):
-    list_jam = ['00']
+    list_jam = ['00','06','12']
     folder_grib = 'C:/CircleGeo/GRIB/' + tanggal
     folder_nc = 'C:/CircleGeo/NC/' + tanggal
     tggl_rapi = "{}-{}-{}".format(str(tanggal)[:4],(tanggal)[4:6],(tanggal)[6:])
